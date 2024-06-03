@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Registro</title>
+    <link rel="stylesheet" href="sti3.css">
+</head>
+
+    <body>
+        <form method="get" action="Datosdelusuario.html">
+        <h2>FORMULARIO DE REGISTRO</h2>
+        <p>Nombre: <input type="text" name="nombre"></p>
+        <p>Apellido: <input type="text" name="apellido"></p>
+        <p>Sexo: <input type="radio" name="sexo" value="Hombre">Hombre <input type="radio" name="sexo" value="Mujer">Mujer </p>
+        <p>Correo: <input type="email" name="correo"> </p>
+        <p>Poblacion: 
+            <select name="ciudad">
+                <option id="ali">Alicante</option>
+                <option id="mad">Madrid</option>
+                <option id="sev">Sevilla</option>
+                <option id="val">Valencia</option>
+            </select>
+        </p>
+        <p>Descripcion: <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea> </p>
+        <p><input type="checkbox" name="notificaciones" value="acepto" checked >Deseo recibir información sobre novedades y ofertas </p>
+        <p><input type="checkbox" name="terminos" value="acepto">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</p>
+        <input class="regis" type="submit" value="registro">
+        </form>
+    </body>
+
+</html>
+

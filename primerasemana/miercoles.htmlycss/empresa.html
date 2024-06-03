@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores del Valle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: orange;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            animation: slideInDown 1s ease forwards;
+        }
+        nav {
+            background-color: orange;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid rgb(224, 99, 99);
+            animation: slideInUp 1s ease forwards;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #ccc;
+        }
+        main {
+            padding: 20px;
+            animation: slideIn 1s ease forwards;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: orange;
+            animation: slideIn 1s ease forwards;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            background-color: #ffc107;
+            border-bottom: 2px solid #333;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        p {
+            background-color: #f48c06;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #d62828;
+            padding: 10px 0;
+            border-bottom: 2px solid #333;
+        }
+        /* Animaciones */
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sabores del Valle</h1>
+    </header>
+    <nav>
+        <a href="menu.html"><strong>Inicio</strong> </a>
+        <a href="empresa.html"><strong>Empresa</strong></a>
+        <a href="producto.html"><strong>Producto</strong></a>
+        <a href="contacto.html"><strong>Contacto</strong></a>        
+        <a href="clientes.html"><strong>Clientes</strong></a>
+    </nav>
+    <main>
+        <h2>Nuestros Objetivos y Cualidades</h2>
+        <table>
+            <tr>
+                <th colspan="2">Excelencia en la Calidad y Sabor</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>Nos esforzamos por ofrecer alimentos de la más alta calidad, utilizando ingredientes frescos, locales y de temporada siempre que sea posible. Nuestro objetivo es deleitar a nuestros clientes con sabores auténticos, preparados con maestría y presentados de manera atractiva.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Satisfacción del Cliente</th>
+                <th>Innovación Gastronómica</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>La satisfacción de nuestros clientes es fundamental para nosotros. Nos comprometemos a brindar un servicio excepcional, escuchar sus comentarios y adaptarnos continuamente para cumplir y superar sus expectativas.</p>
+                </td>
+                <td>
+                    <p>Buscamos constantemente innovar en nuestros menús, introduciendo nuevos platos inspirados en las últimas tendencias culinarias y adaptándonos a las preferencias alimentarias cambiantes de nuestros clientes. Queremos sorprender y emocionar a nuestros comensales con experiencias gastronómicas únicas y emocionantes.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sostenibilidad y Responsabilidad</th>
+                <th>Desarrollo del Equipo</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Nos preocupamos por el impacto ambiental de nuestras operaciones. Nuestro objetivo es adoptar prácticas sostenibles en la producción, el embalaje y la gestión de residuos, minimizando nuestro impacto en el medio ambiente y promoviendo la responsabilidad social en nuestra cadena de suministro.</p>
+                </td>
+                <td>
+                    <p>Valoramos a nuestro equipo y buscamos su desarrollo continuo. Nuestro objetivo es proporcionar un ambiente de trabajo positivo, ofrecer oportunidades de capacitación y crecimiento profesional, y fomentar un espíritu de colaboración y excelencia en nuestro equipo.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Crecimiento Sostenible</th>
+                <th>Resumen</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Buscamos un crecimiento rentable y sostenible como empresa. Esto implica expandir nuestra base de clientes, explorar nuevas oportunidades de mercado, mejorar la eficiencia operativa y mantener una gestión financiera sólida y transparente.</p>
+                </td>
+                <td>
+                    <p>En resumen, nuestra empresa de comida está comprometida con la excelencia en la calidad, la satisfacción del cliente, la innovación, la sostenibilidad y el crecimiento responsable. Estos objetivos nos guían en nuestro día a día mientras trabajamos para ofrecer experiencias culinarias memorables y contribuir de manera positiva a nuestro entorno.</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Historia de Sabores del Valle: Un Viaje Gastronómico de Pasión y Sabor</h2>
+        <p>Hace más de una década, en el corazón de un pintoresco valle rodeado de montañas majestuosas, nació Sabores del Valle, una pequeña empresa familiar con grandes sueños culinarios.</p>
+        <p>La pasión por la cocina y el deseo de compartir esos sabores auténticos con el mundo llevaron a la familia Rodríguez a convertir su hogar en un pequeño restaurante rústico. Con ingredientes frescos del valle y el toque especial de la abuela Julia, cada plato se convirtió en una experiencia gastronómica única que conquistó los corazones y paladares de los comensales locales.</p>
+        <p>Con el tiempo, la reputación de Sabores del Valle se extendió más allá de las fronteras del valle. Los visitantes de otras regiones comenzaron a viajar especialmente para probar las delicias culinarias de la familia Rodríguez. Ante la creciente demanda, decidieron ampliar el restaurante y ofrecer servicios de catering para eventos especiales.</p>
+        <p>El compromiso con la calidad, el sabor excepcional y el servicio impecable impulsaron el crecimiento continuo de Sabores del Valle. La familia invirtió en la capacitación de su equipo, mejoró las instalaciones y expandió el menú para incluir opciones para todos los gustos y preferencias dietéticas.</p>
+        <p>Con el paso de los años, Sabores del Valle se convirtió en un referente gastronómico en la región, ganando premios y reconocimientos por su excelencia culinaria y su contribución a la comunidad local. Además de su éxito comercial, la empresa se comprometió con la sostenibilidad, apoyando a agricultores locales y promoviendo prácticas ambientalmente responsables.</p>
+        <p>Hoy en día, Sabores del Valle es mucho más que un restaurante; es un destino gastronómico de renombre que celebra la herencia culinaria, la creatividad y el amor por la buena comida. La empresa continúa creciendo y evolucionando, manteniendo siempre sus valores fundamentales de pasión por la cocina, calidad y satisfacción del cliente en cada plato que sirve.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participantes destacados - League</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Participantes destacados</h1>
+    </header>
+    <div class="container">
+        <a href="index.html"><button class="inicio">INICIO</button></a>
+        <div class="content">
+            <p>Conoce a los jugadores y equipos más destacados del mundo de los deportes electrónicos.</p>
+            <div>
+                <h2>Jugadores Destacados</h2>
+                <ul>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/10FwycrnAkpshW" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>John "ThunderX" Smith</strong></h3>
+                    </li>
+                    
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/WryTMErd9dYo8iVRKk" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Emily "PixelQueen" Rodriguez</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/ms1tb0NhZl4bD1W9BA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Marcus "ShadowStrike" Lee</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/wpVmI3qbtcYaFrJuLL" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Sophia "NinjaGirl" Chen</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/oUS6u2rbjg4JD4Z9Lp" width="480" height="479" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Alex "DarkFlash" Thompson</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/7hJZcKzjIufeOmqKSj" width="480" height="356" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Luis "ThePhantom" Garcia</strong></h3>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Equipos Destacados</h2>
+                <ul>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/VJweJgLGQuTQaKfbfb" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Team Alpha Legends</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/duJ3c7pD5oPPBD7BVf" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Team Cyber Titans</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/krM6ANSNvFg52" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong> Phoenix Rising</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/VIEUsJrPK45f6CaxiW" width="480" height="370" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Team Galactic Guardians</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/PkzYjT3OTnlOnOqm9b" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Team Neon Tigers</strong></h3>
+                    </li>
+                    <li onmouseover="cambiarColor(this)">
+                        <iframe src="https://giphy.com/embed/yjCWl2zVPVvq0Axbn9" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        <h3><strong>Team Inferno Dragons</strong></h3>
+                    </li>
+                </ul>
+            </div>
+            <p>¡Descubre quiénes están dominando la escena de los deportes electrónicos!</p>
+            <iframe width="560" height="315" src="v7sm.mp4" frameborder="0" allowfullscreen></iframe>        
+        </div>
+    </div>
+    <script>
+        function cambiarColor(elemento) {
+            // Generar colores RGB aleatorios
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            // Aplicar el color al elemento
+            elemento.style.color = `rgb(${r}, ${g}, ${b})`;
+        }
+    </script>
+    
+</body>
+</html>

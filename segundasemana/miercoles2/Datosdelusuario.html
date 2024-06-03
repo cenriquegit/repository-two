@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sti3.css">
+    <title>Usuario</title>
+</head>
+<body>
+    <header>
+        <h1>Datos Guardados del Usuario</h1>
+    </header>
+    <script>
+        function obtenerParametroConsulta(nombre) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(nombre);
+        }
+
+        const nombre = obtenerParametroConsulta('nombre');
+        const apellido = obtenerParametroConsulta('apellido');
+        const sexo = obtenerParametroConsulta('sexo');
+        const correo = obtenerParametroConsulta('correo');
+        const ciudad = obtenerParametroConsulta('ciudad');
+        const descripcion = obtenerParametroConsulta('descripcion');
+        const novedades = obtenerParametroConsulta('notificaciones');
+        const terminos = obtenerParametroConsulta('terminos');
+
+        document.body.innerHTML = `<div><h1 class="titulo">Gracias por enviar el formulario</h1>
+                                    <p>Nombre: ${nombre}</p>
+                                    <p>Apellido: ${apellido}</p>
+                                    <p>Sexo: ${sexo}</p>
+                                    <p>Correo: ${correo}</p>
+                                    <p>Ciudad: ${ciudad}</p>
+                                    <p>Descripción: ${descripcion}</p>
+                                    <p>Deseo recibir información sobre novedades y ofertas: ${novedades}</p>
+                                    <p>Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos: ${terminos}</p>
+                                    <a href="index.html"><input class="alinicio" type="submi" value="Regresar al inicio"></a>
+                                    </div>
+                                    `;
+    </script>
+    </body>
+</body>
+</html>

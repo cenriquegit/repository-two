@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituciones afiliadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #192a56;
+            text-align: center;
+        }
+
+        header {
+            box-sizing: border-box;
+            background-color: #3ff; /* Cambia el color de fondo del encabezado */
+            color: #fff;
+            padding: 1px 3px;
+            text-align:center;
+            animation: slideInFromTop 1s forwards;
+            margin-bottom: 0; /* Añade espacio inferior */
+            text-transform: uppercase;
+            font-style: italic;
+            width: 100%;
+            height: 70px;
+            text-shadow:0  3px #192a56;
+        }
+
+        h1 {
+            color: #333;
+        }
+        h2{
+            color: #999;
+        }
+
+        .imagen-banner:hover .descripcion-banner {
+            transform: translateY(0);
+        }
+
+        .descripcion-banner {
+            transition: transform 0.3s ease;
+            transform: translateY(10%);
+            cursor: pointer;
+        }
+
+        .descripcion-banner:hover {
+            color: #ff5733; /* Cambia de color al pasar el cursor sobre la descripción */
+        }
+
+        .toggle-button {
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        .toggle-button:hover {
+            background-color: #555;
+        }
+
+        .extra-info:hover {
+            background-color: #f0f0f0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .competencia {
+            animation: fadeIn 0.5s ease forwards;
+            min-height: 320px; /* Altura mínima para asegurar que las descripciones no afecten la disposición */
+            display: inline-block;
+            margin-bottom: 20px;
+            height: 500px;
+
+            box-sizing: border-box;
+        }
+
+        .imagen-banner.expandido {
+            width: 100%;
+            box-sizing: border-box;
+        }
+.imagen-banner{
+    box-sizing: border-box;
+   height: 300px;
+}
+        .descripcion-banner{
+            background:#192a67;
+            box-sizing: border-box;
+            margin: 20px 200px;
+            padding: auto;
+            color: #858585;
+
+        }
+        .descripton {
+            margin: 10px;
+            color: #666;
+        }
+        .imagen{
+            box-sizing: border-box;
+            height: 300px;
+            width: 600px;
+        }
+        .banner-image-bg img{
+
+    box-sizing: border-box;
+    max-width: 60%;
+    margin-right: 40px;
+    border-radius: 20px;
+    box-shadow: none;
+    animation: fadeIn 2.4s forwards;
+    box-shadow:0 0 10px 0 #3ff;
+    background: #3ff;
+}
+.inicio {
+    background-color: #3ff;
+    color: #333;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px 20px;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.inicio:hover {
+    background-color: #555;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Instituciones afiliadas</h1>
+    </header>
+    <div class="container">
+        <a href="index.html"><button class="inicio">INICIO</button></a>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="competencia">
+                    <div class="imagen-banner" onclick="toggleInfo('info1'); expandirImagen(this)">
+                        <figure class="banner-image-bg">
+                            <img class="imagen" src="a17.jpg" alt="imagen del SENATI">
+                        </figure>
+                        <div class="descripcion-banner">
+                            <h2 class="title">SENATI</h2>
+                            <p class="description">SENATI es una institución creada a iniciativa de la Sociedad Nacional de Industrias, con el objetivo de proporcionar formación y capacitación profesional en actividades industriales y también para labores en instalaciones, reparaciones y mantenimiento para cualquier otra actividad económica.</p>
+                        </div>
+                    </div>
+                    <div id="info1" class="extra-info" style="display: none;">
+                        <p>Información adicional sobre SENATI.</p>
+                    </div>
+                </div>
+                <div class="competencia">
+                    <div class="imagen-banner" onclick="toggleInfo('info2'); expandirImagen(this)">
+                        <figure class="banner-image-bg">
+                            <img class="imagen" src="a22.jpg" alt="imagen de TECSUP">
+                        </figure>
+                        <div class="descripcion-banner">
+                            <h2 class="title">TECSUP</h2>
+                            <p class="description">Tecsup es una organización educativa privada sin fines de lucro, dedicada a formar y capacitar profesionales, así como brindar servicios de consultoría, investigación y aplicación de tecnología. El fundador, Luis Hochschild Plaut, se esforzó por hacer de Tecsup una valiosa obra para beneficio de los jóvenes y profesionales de empresas e instituciones del país.</p>
+                        </div>
+                    </div>
+                    <div id="info2" class="extra-info" style="display: none;">
+                        <p>Información adicional sobre TECSUP.</p>
+                    </div>
+                </div>
+                <div class="competencia">
+                    <div class="imagen-banner" onclick="toggleInfo('info3'); expandirImagen(this)">
+                        <figure class="banner-image-bg">
+                            <img class="imagen" src="a20.jpg" alt="imagen de ISIL">
+                        </figure>
+                        <div class="descripcion-banner">
+                            <h2 class="title">ISIL</h2>
+                            <p class="description">ISIL es un camino hacia el éxito profesional y personal. Nuestra institución no sólo se preocupa por brindar la mejor formación profesional, sino que también se centra en fomentar los valores que hagan de cada miembro de la comunidad de ISIL, personas de bien para la sociedad. Estos valores conforman la Isología.</p>
+                        </div>
+                    </div>
+                    <div id="info3" class="extra-info" style="display: none;">
+                        <p>Información adicional sobre ISIL.</p>
+                    </div>
+                </div>
+                <div class="competencia">
+                    <div class="imagen-banner" onclick="toggleInfo('info4'); expandirImagen(this)">
+                        <figure class="banner-image-bg">
+                            <img class="imagen" src="a14.jpg" alt="imagen del Instituto del Sur">
+                        </figure>
+                        <div class="descripcion-banner">
+                            <h2 class="title">Instituto del Sur</h2>
+                            <p class="description">El Instituto del Sur se fundó en 1988 en la ciudad de Arequipa con la finalidad de crear una alternativa de estudios que brinde a los jóvenes de nuestra región y del sur del país una formación humana de alto nivel académico.</p>
+                        </div>
+                    </div>
+                    <div id="info4" class="extra-info" style="display: none;">
+                        <p>Información adicional sobre el Instituto del Sur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="toggle-button" onclick="toggleAll()">Mostrar/Ocultar Todo</div>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function toggleAll() {
+            const infos = document.querySelectorAll('.extra-info');
+            infos.forEach(info => {
+                info.style.display = info.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+
+        function expandirImagen(element) {
+            element.classList.toggle('expandido');
+        }
+    </script>
+</body>
+</html>

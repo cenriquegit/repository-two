@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sti3.0.css">
+    <title>Usuario</title>
+</head>
+<body>
+    <header>
+        <h1>Datos Guardados del Usuario</h1>
+        <script>
+            function obtenerParametroConsulta(nombre) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(nombre);
+            }
+    
+            // Obtener los parámetros de consulta
+            const reclamacion = obtenerParametroConsulta('recla');
+            const nombreEmpleado = obtenerParametroConsulta('nombre');
+            const seguroSocial = obtenerParametroConsulta('seguro');
+            const idEmpleado = obtenerParametroConsulta('empleado');
+            const fechaHoy = obtenerParametroConsulta('fecha');
+            const puesto = obtenerParametroConsulta('puesto');
+            const fechaContratacion = obtenerParametroConsulta('contr');
+            const tarifaPago = obtenerParametroConsulta('pago');
+            const direccionPostal = obtenerParametroConsulta('direc');
+            const telefonoFijo = obtenerParametroConsulta('fijo');
+            const telefonoLaboral = obtenerParametroConsulta('labor');
+            const nombreSupervisor = obtenerParametroConsulta('super');
+            const correoSupervisor = obtenerParametroConsulta('correo');
+            const telefonoSupervisor = obtenerParametroConsulta('tele');
+            const estadoEmpleado = obtenerParametroConsulta('estado');
+            const horasPorDia = obtenerParametroConsulta('horas');
+            const diasPorSemana = obtenerParametroConsulta('dias');
+            const ubicacionLesion = obtenerParametroConsulta('ubil');
+            const fechaLesion = obtenerParametroConsulta('fele');
+            const horaLesion = obtenerParametroConsulta('hole');
+            const tiempoPerdido = obtenerParametroConsulta('cape');
+            const empleadoRegresado = obtenerParametroConsulta('reta');
+            const testigos = obtenerParametroConsulta('teac');
+            const descripcionLesion = obtenerParametroConsulta('descle');
+            const descripcionIncidente = obtenerParametroConsulta('descin');
+    
+            // Mostrar los datos en el HTML
+            document.body.innerHTML += `<div>
+                <h2>Formulario de Informe de Accidente/Lesión Laboral</h2>
+                <p>Número de Reclamación: ${reclamacion}</p>
+                <h3>Información Personal</h3>
+                <p>Nombre del Empleado: ${nombreEmpleado}</p>
+                <p>Número de Seguro Social: ${seguroSocial}</p>
+                <p>ID de Empleado: ${idEmpleado}</p>
+                <p>Fecha de Hoy: ${fechaHoy}</p>
+                <h3>Detalles Laborales</h3>
+                <p>Puesto: ${puesto}</p>
+                <p>Fecha de Contratación: ${fechaContratacion}</p>
+                <p>Tarifa de Pago: ${tarifaPago}</p>
+                <h3>Contacto</h3>
+                <p>Dirección Postal: ${direccionPostal}</p>
+                <p>Teléfono Fijo: ${telefonoFijo}</p>
+                <p>Teléfono Laboral: ${telefonoLaboral}</p>
+                <h3>Supervisor</h3>
+                <p>Nombre del Supervisor: ${nombreSupervisor}</p>
+                <p>Correo Electrónico del Supervisor: ${correoSupervisor}</p>
+                <p>Teléfono del Supervisor: ${telefonoSupervisor}</p>
+                <h3>Estado del Empleado</h3>
+                <p>Estado del Empleado: ${estadoEmpleado}</p>
+                <p>Horas por Día: ${horasPorDia}</p>
+                <p>Días por Semana: ${diasPorSemana}</p>
+                <h3>Información sobre Lesiones/Accidente</h3>
+                <p>Ubicación de la Lesión: ${ubicacionLesion}</p>
+                <p>Fecha de la Lesión: ${fechaLesion}</p>
+                <p>Hora de la Lesión: ${horaLesion}</p>
+                <p>¿La Lesión Causó Pérdida de Tiempo en el Trabajo?: ${tiempoPerdido}</p>
+                <p>¿El Empleado Ha Regresado al Trabajo?: ${empleadoRegresado}</p>
+                <p>Testigos: ${testigos}</p>
+                <p>Descripción de la Lesión: ${descripcionLesion}</p>
+                <p>Descripción del Incidente: ${descripcionIncidente}</p>
+            </div>`;
+        </script>
+</body>
+</html>

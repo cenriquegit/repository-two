@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Destino</title>
+</head>
+<body>
+  <script>
+    // Función para obtener los parámetros de consulta de la URL
+    function obtenerParametroConsulta(nombre) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(nombre);
+    }
+    // Obtener los parámetros de consulta
+    const nombre = obtenerParametroConsulta('nombre');
+    const edad = obtenerParametroConsulta('edad');
+    const sexo = obtenerParametroConsulta('sexo');
+    const direccion = obtenerParametroConsulta('dirrecion');
+    const telefono = obtenerParametroConsulta('telefono');
+    const correo = obtenerParametroConsulta('correo');
+    const ocupacion = obtenerParametroConsulta('ocupacion');
+    const nacionalidad = obtenerParametroConsulta('nacionalidad');
+    const tutor = obtenerParametroConsulta('tutor');
+    const identificacion = obtenerParametroConsulta('identificacion');
+    const fecha = obtenerParametroConsulta('fecha');
+    const categoria = obtenerParametroConsulta('categoria');
+    const respuesta = obtenerParametroConsulta('respuesta');
+    const nomconcurso = obtenerParametroConsulta('nomconcurso');
+    // Hacer lo que necesites con los datos
+    console.log('Nombre:', nombre);
+    console.log('Direccion:', edad);
+    console.log('Telefono:', sexo);
+    console.log('Carrera:', direccion);
+    console.log('Genero:', telefono);
+    console.log('Biografia:', correo);
+    console.log('Nombre:', ocupacion);
+    console.log('Direccion:', nacionalidad);
+    console.log('Telefono:', tutor);
+    console.log('Carrera:', identificacion);
+    console.log('Genero:', fecha);
+    console.log('Biografia:', categoria);
+    console.log('Genero:', respuesta);
+    console.log('Biografia:', nomconcurso);
+    // Mostrar los datos en el HTML
+    document.body.innerHTML = `<h1>Gracias por enviar el formulario</h1>                      
+    <p>Nombre: ${nombre}</p>
+                                <p>Direccion: ${edad}</p>
+                                <p>Telefono: ${sexo}</p>
+                                <p>Carrera: ${direccion}</p>
+                                <p>Genero: ${telefono}</p>
+                                <p>Biografia: ${correo}</p>
+                                <p>Nombre: ${ocupacion}</p>
+                                <p>Direccion: ${nacionalidad}</p>
+                                <p>Telefono: ${tutor}</p>
+                                <p>Carrera: ${identificacion}</p>
+                                <p>Genero: ${fecha}</p>
+                                <p>Biografia: ${categoria}
+                                    <p>Genero: ${respuesta}</p>
+                                <p>Biografia: ${nomconcurso}</p>`;
+  </script>
+</body>
+</html>

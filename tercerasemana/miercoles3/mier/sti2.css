@@ -1,0 +1,54 @@
+body{
+    font-family: sans-serif;
+    background-image: url("s.webp") ; 
+                background-position: center 25%; 
+                background-size: cover;
+           
+
+}
+form{
+    text-align: start;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    margin: 0 10vw;
+    border: 4px double #555;
+    border-radius: 30px;
+    word-wrap: break-word;
+    padding: 2.5vh 2.5vw;
+    background-color: #999e;
+}
+input{
+    border: none;
+    border-bottom:2px solid #666 ;
+    background-color: transparent;
+}
+.submit{
+    text-align: center;
+    letter-spacing: 2px;
+    color: #999;
+    background-color: #222;
+    text-transform: uppercase;
+}
+h2{
+    text-align: center;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+li{
+    padding:10px 0 10px 0 ;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.icono {
+    display: inline-block;
+    width: 20px; /* Ajusta el ancho del icono según sea necesario */
+    height: 20px; /* Ajusta la altura del icono según sea necesario */
+    background-image: url('icono.png'); /* URL del icono */
+    background-size: contain; /* Ajusta el tamaño del icono */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+  }

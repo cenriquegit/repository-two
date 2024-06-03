@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sti3.0.css">
+    <title>Usuario</title>
+</head>
+<body>
+    <header>
+        <h1>Datos Guardados del Usuario</h1>
+    </header>
+    <script>
+       function obtenerParametroConsulta(nombre) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(nombre);
+    }
+    // Obtener los parámetros de consulta
+    const ciudad = obtenerParametroConsulta('ciudad');
+    const fecha = obtenerParametroConsulta('fecha');
+    const identificacion = obtenerParametroConsulta('identificacion');
+    const numero = obtenerParametroConsulta('numero');
+    const nombre = obtenerParametroConsulta('nombre');
+    const direccion = obtenerParametroConsulta('direccion');
+    const barrio = obtenerParametroConsulta('barrio');
+    const departamento = obtenerParametroConsulta('departamento');
+    const residen= obtenerParametroConsulta('residen');
+    const profesion = obtenerParametroConsulta('profesion');
+    const especialidad = obtenerParametroConsulta('especialidad');
+    const nacimiento = obtenerParametroConsulta('nacimiento');
+    const casa = obtenerParametroConsulta('casa');
+    const entrega = obtenerParametroConsulta('entrega');
+    const telefono = obtenerParametroConsulta('telefono');
+    const fax = obtenerParametroConsulta('fax');
+    const celular = obtenerParametroConsulta('celular');
+    const email1 = obtenerParametroConsulta('email1');
+    const email2 = obtenerParametroConsulta('email2');
+    // Hacer lo que necesites con los datos
+    console.log('Ciudad:', ciudad);
+    console.log('Fecha:', fecha);
+    console.log('Identificacion:', identificacion);
+    console.log('No.:', numero);
+    console.log('Nombre ó Razón Social:', nombre);
+    console.log('Dirección de domicilio principal:', direccion);
+    console.log('Barrió:', barrio);
+    console.log('Departamento:', departamento);
+    console.log('Ciudad 2:', residen);
+    console.log('Profesión:', profesion);
+    console.log('Especialidad:', especialidad);
+    console.log('Fecha Nacimiento:', nacimiento);
+    console.log('Dirección Casa:', casa);
+    console.log('Dirección para entrega de pedidos:', entrega);
+    console.log('Teléfono No.:', telefono);
+    console.log('Fax No.:', fax);
+    console.log('Celular:', celular);
+    console.log('E-mail 1:', email1);
+    console.log('E-mail 2:', email2);
+    // Mostrar los datos en el HTML
+    document.body.innerHTML = `<div><h1>Gracias por enviar el formulario</h1>                      
+    <h3>Datos básicos del cliente</h3>                                
+                                <p>Ciudad: ${ciudad}</p>
+                                <p>Fecha: ${fecha}</p>
+                                <p>Identificacion: ${identificacion}</p>
+                                <p>No.: ${numero}</p>
+                                <p>Nombre ó Razón Social: ${nombre}</p>
+                                <p>Dirección de domicilio principal: ${direccion}</p>
+                                <p>Barrió: ${barrio}</p>
+                                <p>Departamento: ${departamento}</p>
+                                <p>Ciudad: ${residen}</p>
+    <h3>(* Información requerida para personas naturales)</h3>
+                                <p>Profesión: ${profesion}</p>
+                                <p>Especialidad: ${especialidad}
+                                <p>Fecha Nacimiento: ${nacimiento}</p>
+                                <p>Dirección Casa: ${casa}</p>
+    <h3>Datos necesarios para la entrega</h3>
+                                <p>Dirección para entrega de pedidos: ${entrega}</p>
+                                <p>Teléfono No.: ${telefono}</p>
+                                <p>Fax No.: ${fax}</p>
+                                <p>Celular: ${celular}
+                                <p>E-mail 1: ${email1}</p>
+                                <p>E-mail 2: ${email2}</p></div>`;
+    </script>
+    </body>
+</body>
+</html>

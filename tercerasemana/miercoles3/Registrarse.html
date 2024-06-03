@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Registro</title>
+    <link rel="stylesheet" href="sti3.css">
+    <style>
+/* Estilos específicos para el formulario 3 */
+
+#formulario3 {
+    width: 1500px;
+    height: 2000px;
+    color: #424f;
+    background-color: #9999;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#formulario3 h2, #formulario3 h3 {
+    color: #424f;
+    text-align: center; /* Alineación centrada */
+    font-weight: bolder;
+    margin-bottom: 40px;
+
+}
+
+#formulario3 label {
+    display: block;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+#formulario3 input[type="text"],
+#formulario3 input[type="number"],
+#formulario3 input[type="date"],
+#formulario3 textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+#formulario3 input[type="radio"] {
+    margin-right: 5px; /* Espacio entre radio buttons y texto */
+}
+
+#formulario3 div {
+    display: flex; /* Para que los elementos dentro del div se alineen horizontalmente */
+    justify-content: space-between; /* Espacio entre los elementos dentro del div */
+}
+
+#formulario3 div > div {
+    flex: 1; /* Que los div dentro de div ocupen todo el ancho disponible */
+    margin-right: 10px; /* Margen derecho entre los div */
+}
+
+#formulario3 textarea {
+    height: 100px; /* Altura del textarea */
+}
+
+#formulario3 input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right; /* Alinear a la derecha */
+}
+
+#formulario3 input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#formulario3 input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right; /* Alinear a la derecha */
+    margin-right: 10px; /* Espacio entre el botón de reset y el de submit */
+}
+
+#formulario3 input[type="reset"]:hover {
+    background-color: #da190b;
+}
+
+/* Estilos para los labels encima de los inputs */
+#formulario3 div > div {
+    flex-direction: column; /* Para que los elementos dentro de cada div se apilen verticalmente */
+    align-items: flex-start; /* Alineación del contenido al inicio */
+}
+.envio{
+    margin-right: 680px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+}
+
+    </style>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="#" onclick="cambiarContenido('formulario1')">Formulario 1</a></li>
+            <li><a href="#" onclick="cambiarContenido('formulario2')">Formulario 2</a></li>
+            <li><a href="#" onclick="cambiarContenido('formulario3')">Formulario 3</a></li>
+
+        </ul>
+    </nav>
+    <div id="contenido">
+        <form id="formulario1" style="display: block;" method="get" action="Datosdelusuario.html">
+            <h2>FORMULARIO DE REGISTRO DE CLIENTES</h2>
+            <!-- Contenido del Formulario 1 -->
+            <p>Documentos requeridos para creación de cliente con lista de precio:</p>
+            <ol>
+                <li>Persona Natural: Fotocopia de Cédula de Ciudadanía, Tarjeta profesional y Fotocopia del RUT.</li>
+                <li>Persona Jurídica: Cámara y Comercio (no mayor a 30 días), Fotocopia de RUT y Cédula de Ciudadanía del Representante Legal.</li>
+            </ol>
+            <h3>Datos básicos del cliente</h3>
+            <p>Ciudad: <input type="text" name="ciudad"> Fecha: <input type="text" name="fecha"></p>
+            <p>Cédula <input type="radio" name="identificacion" value="ce"> Nit. <input type="radio" name="identificacion" value="ce"> No. <input type="text" name="numero"></p>
+            <p>Nombre ó Razón Social: <input type="text" name="nombre" ></p>
+            <p>Dirección de domicilio principal: <input type="text" name="direccion"></p>
+            <p>Barrió: <input type="text" name="barrio" > Departamento: <input type="text" name="departamento" > Ciudad: <input type="text" name="residen"></p>
+            <div></div>
+            <h3>(* Información requerida para personas naturales)</h3>
+            <p>*Profesión: <input type="text" name="profesion"> Especialidad: <input type="text" name="especialidad"></p>
+            <p>*Fecha Nacimiento: <input type="text" name="nacimiento"> Dirección Casa:
+                <input type="text" name="casa"></p>
+            <div></div>
+            <h4>Dirección para entrega de pedidos: <input type="text" name="entrega" ></h4>
+            <p>Teléfono No.: <input type="text" name="telefono"> Fax No.: <input type="text" name="fax"> Celular: <input type="text" name="celular"></p>
+            <p>E-mail 1: <input type="email" name="email1"> E-mail 2:
+                <input type="email" name="email2"></p>
+                <input class="submit" type="submit">
+        </form>
+        <form id="formulario2" style="display:none;" method="get" action="datos2.html">
+            <h2>Formulario 2</h2>
+            <label for="codi">Codigo:</label>
+                <input type="text" id="codi" name="codi" required>
+                <label for="prov">Cod.Prov.:</label>
+                <input type="text" id="prov" name="prov" required><br><br>
+                <label for="desc">Descripcion:</label>
+                <textarea id="desc" name="desc" rows="1" cols="80" required></textarea><br><br>
+                <label for="rubr">Rubro:</label>
+                <select name="rubr" id="rubr" required>
+                    <option value="ferre">Ferreteria</option>
+                    <option value="carp">Carpinteria</option>
+                    <option value="cris">Cristaleria</option>
+                </select><br><br>
+                <label for="marc">Marca:</label>
+                <select name="marc" id="marc" required>
+                    <option value="alia">Aliafor</option>
+                    <option value="dell">Dellcore</option>
+                    <option value="inte">Intelcry</option>
+                </select><br><br>
+                <label for="unid">Unidad:</label>
+                <select name="unid" id="unid" required>
+                    <option value="op1">kilo</option>
+                    <option value="op2">litro</option>
+                    <option value="op3">1 centena</option>
+                </select><br><br>
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*" required>
+                <br><br>
+                <label for="prov1">Proveedor:</label>
+                <select name="prov1" id="prov1" required>
+                    <option value="op1">Santiago Gustamante</option>
+                    <option value="op2">Lucero Lazaro</option>
+                    <option value="op3">Javier Matias</option>
+                </select>
+                <label for="fech">Fecha Compra: </label>
+                <input type="date" name="fech" id="fech" required><br><br>
+                <label for="cost">Costo: </label>
+                <input type="number" id="cost" name="cost">
+                <br><br>
+                <label for="gana">% Ganancia:</label>
+                <input type="number" id="gana" name="gana">
+                <br><br>
+                <label for="iva">IVA (%):</label>
+                <input type="number" id="iva" name="iva">
+                <br><br>
+                <label for="ubic">Ubic.: </label>
+                <input type="text" name="ubic" id="ubic" required><br><br>
+                <input type="checkbox" name="pcal" id="pcal">
+                <label for="pcal">Precio Calculado:</label>
+                <input type="text" id="pcal" readonly>
+                <label for="stoc">Stock</label>
+                <input type="number" name="stoc" id="stoc" required>
+                <label for="stmi">Stock Minimo</label>
+                <input type="number" name="stmi" id="stmi" required>
+                <div class="minifor">
+                <label for="efec">Efectivo</label>
+                <input type="text" name="efec" id="efec">
+                <label for="tarj">Tarjeta</label>
+                <input type="text" name="tarj" id="tarj">
+                <label for="lis3">Lista 3</label>
+                <input type="text" name="lis3" id="lis3">
+                <label for="lis4">Lista 4</label>
+                <input type="text" name="lis4" id="lis4">
+                </div>
+                <br><br>
+                <button type="submit">Guardar</button>
+                <button type="reset">Cancelar</button>
+        </form>
+        <form id="formulario3" style="display:none;" method="get" action="datos3.html">
+            <h2>ACCIDENTE / LESIÓN LABORAL</h2>
+            <h3>FORMULARIO DE INFORME</h3>
+            <div>
+                <div>
+                    <h3>INSTRUCCIONES</h3>
+                    <p>Este formulario se completará lo antes posible después de un accidente o lesión relacionado con el empleado. Si el empleado no puede, el supervisor deberá completar este formulario y luego enviarlo a la oficina de Recursos Humanos.</p> 
+                </div>
+                <div>
+                    <label for="recla">N.° DE RECLAMACIÓN</label><br>
+                    <input type="text" name="recla">    
+                </div>
+            </div>
+            <h3>INFORMACIÓN PERSONAL</h3>
+            <div>
+                <div>
+                    <label for="nombre">NOMBRE DEL EMPLEADO</label><br>
+                    <input type="text" name="nombre">
+                </div>
+                <div>
+                    <label for="seguro">N.° DE SEGURO SOCIAL</label><br>
+                    <input type="number" name="seguro">
+                </div>
+                <div>
+                    <label for="empleado">ID DE EMPLEADO</label><br>
+                    <input type="text" name="empleado">
+                </div>
+                <div>
+                    <label for="fecha">FECHA DE HOY</label><br>
+                    <input type="date" name="fecha">
+                </div>
+            </div>
+            <!-- 2 casilla-->
+            <div>
+                <div>
+                    <label for="puesto">PUESTO</label><br>
+                    <input type="text" name="puesto">
+                </div>
+                <div>
+                    <label for="contr">FECHA DE CONTRATACIÓN</label><br>
+                    <input type="date" name="contr">
+                </div>
+                <div>
+                    <label for="pago">TARIFA DE PAGO</label><br>
+                    <input type="text" name="pago">
+                </div>
+            </div>
+            <!--3 casilla-->
+            <div>
+                <div>
+                    <label for="direc">DIRECCIÓN POSTAL</label><br>
+                    <input type="text" name="direc">
+                </div>
+                <div>
+                    <label for="fijo">TELÉFONO FIJO</label><br>
+                    <input type="number" name="fijo">
+                </div>
+                <div>
+                    <label for="labor">TELÉFONO LABORAL</label><br>
+                    <input type="number" name="labor">
+                </div>
+            </div>
+            <!--4 casilla-->
+            <div>
+                <div>
+                    <label for="super">NOMBRE DEL SUPERVISOR</label><br>
+                    <input type="text" name="super">
+                </div>
+                <div>
+                    <label for="correo">CORREO ELECTRÓNICO DEL SUPERVISOR</label><br>
+                    <input type="email" name="correo">
+                </div>
+                <div>
+                    <label for="tele">TELÉFONO</label><br>
+                    <input type="number" name="tele">
+                </div>
+            </div>
+            <!--5 casilla-->
+            <div>
+                <div>
+                    <label for="estado">ESTADO DEL EMPLEADO</label><br>
+                    <input type="radio" name="estado" value="TIEMPO COMPLETO"><p>TIEMPO COMPLETO</p>
+                    <input type="radio" name="estado" value="TIEMPO PARCIAL"><p>TIEMPO PARCIAL</p>
+                </div>
+                <div>
+                    <label for="horas">HORAS POR DÍA</label><br>
+                    <input type="text" name="horas">
+                </div>
+                <div>
+                    <label for="dias">DíAS POR SEMANA</label><br>
+                    <input type="text" name="dias">
+                </div>
+            </div>
+            <h3>INFORMACIÓN SOBRE LESIONES / ACCIDENTE</h3>
+            <!--6 casilla-->
+            <div>
+                <div>
+                    <label for="ubil">UBICACIÓN DE LA LESIÓN</label><br>
+                    <input type="text" name="ubil">
+                </div>
+                <div>
+                    <label for="fele">FECHA DE LA LESIÓN</label><br>
+                    <input type="date" name="fele">
+                </div>
+                <div>
+                    <label for="hole">HORA DE LA LESIÓN</label><br>
+                    <input type="text" name="hole">
+                </div>
+            </div>
+            <!--7 casilla-->
+            <div>
+                <div>
+                    <label for="cape">¿LA LESIÓN CAUSÓ PÉRDIDA DE TIEMPO EN EL TRABAJO? Proporcione fechas, cantidad de tiempo</label><br>
+                    <input type="text" name="cape">
+                </div>
+                <div>
+                    <label for="reta">¿EL EMPLEADO HA REGRESADO AL TRABAJO?</label><br>
+                    <input type="text" name="reta">
+                </div>
+            </div>
+            <!--8 casilla-->
+            <div>
+                <div>
+                    <label for="teac">TESTIGOS Proporcione los nombres de los testigos del accidente / lesión</label><br>
+                    <textarea name="teac"></textarea>
+                </div>
+            </div>
+            <!--9 casilla-->
+            <div>
+                <div>
+                    <label for="descle">DESCRIPCIÓN DE LA LESIÓN ¿Qué partes del cuerpo se vieron afectadas? ¿Qué tipo de lesión?</label><br>
+                    <textarea name="descle"></textarea>
+                </div>
+            </div>
+            <!--10 casilla-->
+            <div>
+                <div>
+                    <label for="descin">DESCRIPCIÓN DEL INCIDENTE¿Qué hacía el empleado en el momento del incidente? ¿Cómo se produjo la lesión?</label><br>
+                    <textarea name="descin"></textarea>
+                </div>
+            </div>
+            <input class="envio" type="submit">
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function cambiarContenido(formulario) {
+            var formularios = document.querySelectorAll('form');
+            for (var i = 0; i < formularios.length; i++) {
+                formularios[i].style.display = 'none';
+            }
+            document.getElementById(formulario).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

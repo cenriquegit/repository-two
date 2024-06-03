@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Productos</title>
+  <link rel="stylesheet" href="sti2.css">
+</head>
+<body>
+  <nav id="menu">
+    <ul>
+      <li><a href="#" onclick="cambiarContenido('formulario1')">Formulario 1</a></li>
+      <li><a href="#" onclick="cambiarContenido('formulario2')">Formulario 2</a></li>
+    </ul>
+  </nav>
+
+  <div id="contenido">
+    <!-- Contenido inicial -->
+    <form id="formulario1" style="display:block;" onsubmit="return validarFormulario1()">
+      <h2>Formulario 1</h2>
+      <label for="codi">Codigo:</label>
+      <input type="text" id="codi" name="codi" required>
+      <label for="prov">Cod.Prov.:</label>
+      <input type="text" id="prov" name="prov" required><br><br>
+      <label for="desc">Descripcion:</label>
+      <textarea id="desc" name="desc" rows="1" cols="80" required></textarea><br><br>
+      <label for="rubr">Rubro:</label>
+      <select name="rubr" id="rubr" required>
+        <option value="ferre">Ferreteria</option>
+        <option value="carp">Carpinteria</option>
+        <option value="cris">Cristaleria</option>
+      </select><br><br>
+      <label for="marc">Marca:</label>
+      <select name="marc" id="marc" required>
+        <option value="alia">Aliafor</option>
+        <option value="dell">Dellcore</option>
+        <option value="inte">Intelcry</option>
+      </select><br><br>
+      <label for="unid">Unidad:</label>
+      <select name="unid" id="unid" required>
+        <option value="op1">kilo</option>
+        <option value="op2">litro</option>
+        <option value="op3">1 centena</option>
+      </select><br><br>
+      <label for="foto">Foto:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" required>
+      <br><br>
+      <label for="prov1">Proveedor:</label>
+      <select name="prov1" id="prov1" required>
+        <option value="op1">Santiago Gustamante</option>
+        <option value="op2">Lucero Lazaro</option>
+        <option value="op3">Javier Matias</option>
+      </select>
+      <label for="fech">Fecha Compra: </label>
+      <input type="date" name="fech" id="fech" required><br><br>
+      <label for="cost">Costo: </label>
+      <label for="cost">Costo:</label>
+  <input type="number" id="cost" name="cost">
+  <br><br>
+  <label for="gana">% Ganancia:</label>
+  <input type="number" id="gana" name="gana">
+  <br><br>
+  <label for="iva">IVA (%):</label>
+  <input type="number" id="iva" name="iva">
+  <br><br>
+      <label for="ubic">Ubic.: </label>
+      <input type="text" name="ubic" id="ubic" required><br><br>
+      <input type="checkbox" name="pcal" id="pcal">
+      <label for="pcal">Precio Calculado:</label>
+  <input type="text" id="pcal" readonly>
+      <input type="number" name="stoc" id="stoc" required>
+      <label for="stmi">Stock Minimo</label>
+      <input type="number" name="stmi" id="stmi" required>
+      <label for="efec">Efectivo</label>
+      <input type="text" name="efec" id="efec">
+      <label for="tarj">Tarjeta</label>
+      <input type="text" name="tarj" id="tarj">
+      <label for="lis3">Lista 3</label>
+      <input type="text" name="lis3" id="lis3">
+      <label for="lis4">Lista 4</label>
+      <input type="text" name="lis4" id="lis4">
+      <br><br>
+      <button type="submit">Guardar</button>
+      <button type="reset">Cancelar</button>
+    </form>
+
+    <form id="formulario2" style="display:none;">
+      <h2>Formulario 2</h2>
+      <label for="nombre2">Nombre:</label>
+      <input type="text" id="nombre2" name="nombre2"><br><br>
+      <label for="email2">Email:</label>
+      <input type="email" id="email2" name="email2"><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+      $(document).ready(function() {
+  // Función para calcular el precio calculado
+  function calcularPrecio() {
+    var costo = parseFloat($("#cost").val()) || 0;
+    var ganancia = parseFloat($("#gana").val()) || 0;
+    var iva = parseFloat($("#iva").val()) || 0;
+
+    // Calcular el precio calculado
+    var precioCalculado = costo * (1 + (ganancia / 100)) * (1 + (iva / 100));
+
+    // Mostrar el precio calculado en el campo correspondiente
+    $("#pcal").val(precioCalculado.toFixed(2));
+  }
+
+  // Asociar la función de cálculo al cambio en los campos relevantes
+  $("#cost, #gana, #iva").on("input", calcularPrecio);
+
+  // Ejecutar el cálculo al cargar la página
+  calcularPrecio();
+});
+
+    </script>
+  </div>
+</body>
+</html>

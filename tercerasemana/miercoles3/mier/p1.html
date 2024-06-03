@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Dinámico con Formularios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="menu">
+    <ul>
+      <li><a href="#" onclick="cambiarContenido('formulario1')">Formulario 1</a></li>
+      <li><a href="#" onclick="cambiarContenido('formulario2')">Formulario 2</a></li>
+    </ul>
+  </nav>
+
+  <div id="contenido">
+    <!-- Contenido inicial -->
+    <form id="formulario1" style="display:block;">
+      <h2>Formulario 1</h2>
+      <label for="nombre1">Nombre:</label>
+      <input type="text" id="nombre1" name="nombre1"><br><br>
+      <label for="email1">Email:</label>
+      <input type="email" id="email1" name="email1"><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <form id="formulario2" style="display:none;">
+      <h2>Formulario 2</h2>
+      <label for="nombre2">Nombre:</label>
+      <input type="text" id="nombre2" name="nombre2"><br><br>
+      <label for="email2">Email:</label>
+      <input type="email" id="email2" name="email2"><br><br>
+      <button type="submit">cara</button>
+    </form>
+  </div>
+
+  <script>
+    function cambiarContenido(formulario) {
+      var formularios = document.querySelectorAll('form');
+      for (var i = 0; i < formularios.length; i++) {
+        formularios[i].style.display = 'none';
+      }
+      document.getElementById(formulario).style.display = 'block';
+    }
+  </script>
+</body>
+</html>

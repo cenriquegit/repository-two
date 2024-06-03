@@ -1,0 +1,24 @@
+/* Estilos para el menú */
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menu ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  #menu ul li a {
+    text-decoration: none;
+    color: blue;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  #menu ul li a:hover {
+    color: red;
+    background-color: lightblue;
+  }
+  

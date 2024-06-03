@@ -1,0 +1,105 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores del Valle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d41;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            animation: fadeInDown 1s ease forwards;
+        }
+        nav {
+            background-color: orange;
+            padding: 10px;
+            text-align: center;
+            border: 1px  solid red;
+            animation: slideInUp 1s ease forwards;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #ccc;
+        }
+        main {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: orange;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            background-color: #ffc107;
+            border-bottom: 2px solid #333;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        p {
+            background-color: #f48c06;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #d62828;
+            padding: 10px 0;
+            border-bottom: 2px solid #333;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sabores del Valle</h1>
+    </header>
+    <nav>
+        <a href="menu.html"><strong>Inicio</strong> </a>
+        <a href="empresa.html"><strong>Empresa</strong></a>
+        <a href="producto.html"><strong>Producto</strong></a>
+        <a href="contacto.html"><strong>Contacto</strong></a>        
+        <a href="clientes.html"><strong>Clientes</strong></a>
+    </nav>
+    <div>
+    </div>
+</body>
+</html>

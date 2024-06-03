@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    font-size: 20px;
+    background-color: #192a56; /* Cambia el color de fondo de la página */
+    animation: slideInFromTop 1s forwards;
+    color: #333; /* Cambia el color del texto */
+}
+
+header {
+    background-color: #00d2d3; /* Cambia el color de fondo del encabezado */
+            color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    animation: slideInFromTop 1s forwards;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.container {
+    animation: slideInFromLeft 2s forwards;
+    background-color: rgb(76, 76, 236);
+    max-width: 1400px;
+    margin: 40px auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+}
+
+/* Estilos específicos para competencias */
+.competencia {
+
+    display: none;
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: slideInFromLeft 1s forwards;
+    box-sizing:border-box;
+    height: 600px;
+
+}
+video{
+    max-width: 60%;
+    margin-right: 40px;
+    border-radius: 20px;
+    box-shadow: none;
+    animation: fadeIn 1s forwards;
+}
+.competencia img {
+    max-width: 60%;
+    margin-right: 40px;
+    border-radius: 20px;
+    box-shadow: none;
+    animation: fadeIn 1s forwards;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    animation: slideInFromRight 1s forwards;
+}
+
+.description {
+    font-size: 24px;
+    color: #555;
+    line-height: 1.8;
+    animation: fadeIn 1s forwards;
+}
+
+/* Estilos para los botones de navegación */
+.prev, .next,.inicio {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #555;
+}
+
+/* Animaciones */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.des{
+    background: #24df;
+    margin: 0;
+    text-align: center;
+    color: #ddd;
+}

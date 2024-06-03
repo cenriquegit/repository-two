@@ -1,0 +1,95 @@
+body{
+    font-family: sans-serif;
+    background-image: url("dep.gif") ; 
+                background-position: center 25%; 
+                background-size: cover;
+           
+
+}
+form{
+    width:  1250px;
+    height: 1000px;
+    text-align: start;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    margin: 100px auto;
+    border: 4px double #338f;
+    border-radius: 30px;
+    word-wrap: break-word;
+    padding: 2.5vh 2.5vw;
+    background-color: #9999;
+    color: #424f;
+    font-weight: bold;
+    
+}
+input{
+    border: none;
+    border-bottom:2px solid #666 ;
+    background-color: transparent;
+    color: #045a;
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+    margin:auto;
+
+}
+.submit{
+    text-align: center;
+    letter-spacing: 2px;
+    color: #999;
+    background-color: #222;
+    text-transform: uppercase;
+    margin: 30px 450px ;
+    width: 250px;
+    height: 35px;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+li{
+    padding:10px 0 10px 0 ;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.icono {
+    display: inline-block;
+    width: 20px; /* Ajusta el ancho del icono según sea necesario */
+    height: 20px; /* Ajusta la altura del icono según sea necesario */
+    background-image: url('icono.png'); /* URL del icono */
+    background-size: contain; /* Ajusta el tamaño del icono */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+  }
+  #menu ul {
+    list-style-type: none;
+    margin: 0 20px;
+    padding: 0;
+  }
+  
+  #menu ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  #menu ul li a {
+    text-decoration: none;
+    color: blue;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  #menu ul li a:hover {
+    color: red;
+    background-color: lightblue;
+  }
+textarea{
+    background-color: transparent;s
+}

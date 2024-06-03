@@ -1,0 +1,94 @@
+body{
+    font-family: sans-serif;
+    background-image: url("f1.jpg") ; 
+                background-position: center 25%; 
+                background-size: cover;
+}
+div{
+    text-align: start;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 40px auto;
+    border: 4px double #555;
+    border-radius: 30px;
+    word-wrap: break-word;
+    padding: 2.5vh 2.5vw; 
+    background-color: #999e;
+    color: #ddf;
+}
+form{
+    width: 700px;
+    text-align: start;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    margin: 0 25vw;
+    border: 4px double #555;
+    border-radius: 30px;
+    word-wrap: break-word;
+    padding: 2.5vh 2.5vw;
+    background-color: #999e;
+    margin: 40px auto;
+}
+input{
+    border: none;
+    border-bottom:2px solid #666 ;
+    background-color: transparent;
+    color: #555;
+    font-weight: bolder;
+}
+.submit{
+    text-align: center;
+    letter-spacing: 2px;
+    color: #999;
+    background-color: #222;
+    text-transform: uppercase;
+}
+h2{
+    text-align: center;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+li{
+    padding:10px 0 10px 0 ;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.alinicio{
+    background: #ddfe;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6px 2px;
+    font-size: 15px;
+    margin: 20px 100px;
+    letter-spacing: 2px;
+box-shadow: 0 0 20px 0 #dff;
+}
+.titulo{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #ccf;
+
+}
+.regis{
+    width: 120px;
+    height: 40px;
+    margin: 20px 250px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    background-color: #222;
+    color: #999;
+    border-bottom: 2px solid #ffff;
+    border-left: 2px solid #ffff;
+    border-right: 2px solid #ffff;
+}

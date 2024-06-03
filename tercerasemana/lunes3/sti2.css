@@ -1,0 +1,33 @@
+body{
+    background-color: #333;
+    font-family: sans-serif;
+}
+.carta{
+    background-color: #eee;
+    padding: 6px ;
+    border: 8px double #16d;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+h1{
+    text-align: center;
+    color: #16d;
+    font-size: 24px;
+    margin-bottom: 1px;
+}
+h2{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+form{
+    word-wrap: break-word;
+
+}
+input{
+    border: none;
+    border-bottom: 2px solid #999;
+    color: #51d;
+}

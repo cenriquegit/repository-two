@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: #192a56; /* Cambia el color de fondo de la página */
+    color: #fff; /* Cambia el color del texto */
+    animation: slideInFromTop 1s forwards;
+}
+
+header {
+    background-color: #00d2d3; /* Cambia el color de fondo del encabezado */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    animation: slideInFromTop 1s forwards;
+    margin: 0; /* Añade espacio inferior */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top:0 ;
+    width: 800;
+}
+
+.content {
+    background-color: #4bcffa; /* Cambia el color de fondo del contenido */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+p {
+    color: #313ef7; /* Cambia el color del texto normal */
+    margin-bottom: 20px; /* Añade espacio inferior */
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    transition: color 0.3s; /* Agregar transición para el cambio de color */
+    cursor: pointer; /* Cambiar cursor al pasar sobre los elementos */
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h2{
+    animation: fadeIn 1s forwards;
+    text-align: center;
+    color:#4bcffa;
+    background-color: #192a56;
+
+}
+h3{
+    text-align: start;
+    justify-content: left;
+    border-radius: 20%;
+    background-color: #01b4f0;
+}
+
+/* Agrega más animaciones y colores según sea necesario */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+button {
+background-color: #01b4f0;
+color: #fff;
+padding: 20px 40px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+margin: 40px 335px;
+width: 130px;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-align: center;
+}
+
+.inicio:hover {
+background-color: #aaa;
+}

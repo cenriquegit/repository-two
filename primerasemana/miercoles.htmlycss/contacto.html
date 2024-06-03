@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: orange;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            animation: fadeInDown 1s ease forwards;
+        }
+        nav {
+            background-color: orange;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid red;
+            animation: slideInUp 1s ease forwards;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #ccc;
+        }
+        p {
+            text-align: center;
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+        iframe {
+            border: 3px solid blue;
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            display: block;
+            margin: 0 auto;
+            animation: slideIn 1s ease forwards;
+        }
+        .redes-sociales {
+            text-align: center;
+            animation: fadeIn 1s ease forwards;
+        }
+        .redes-sociales a {
+            display: inline-block;
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            line-height: 40px;
+            border-radius: 50%;
+            margin: 0 auto;
+            border: 3px solid yellow;
+            animation: bounceIn 1s ease forwards;
+        }
+        .redes-sociales img {
+            border-radius: 50%;
+            width: 40px; 
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sabores del Valle</h1>
+    </header>
+    <nav>
+        <a href="menu.html"><strong>Inicio</strong> </a>
+        <a href="empresa.html"><strong>Empresa</strong></a>
+        <a href="producto.html"><strong>Producto</strong></a>
+        <a href="contacto.html"><strong>Contacto</strong></a>        
+        <a href="clientes.html"><strong>Clientes</strong></a>
+    </nav>
+   
+    <div>
+        <p><strong>Direccion :</strong> Jirón Apurímac 2354</p>
+        <p><strong>Teléfono :</strong> 987877665</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.8586003040705!2d-76.17309384047985!3d-9.862228226929055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c75f9411a757%3A0x92f7424b50a3db39!2sSABORES%20DE%20MI%20VALLE!5e0!3m2!1ses!2spe!4v1712149267309!5m2!1ses!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="l3.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="l2.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="l1.png" alt="Instagram">
+        </a>
+    </div>
+</body>
+</html>
